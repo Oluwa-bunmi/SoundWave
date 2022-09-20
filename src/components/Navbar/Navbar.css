@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap");
-nav {
+header {
+  background-image: url(../../assets/bg.svg);
+  background: #B0AAAA;
+}
+
+header nav {
   font-family: "Poppins", sans-serif;
   width: 80%;
   margin: auto;
@@ -15,7 +20,7 @@ nav {
           align-items: center;
 }
 
-nav div:first-child {
+header nav div:first-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,24 +30,21 @@ nav div:first-child {
   gap: 1rem;
 }
 
-nav div:first-child img {
+header nav div:first-child img {
   width: 3rem;
 }
 
-nav .navLinks {
+header nav .navLinks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-nav .navLinks a {
+header nav .navLinks a {
   font-size: 1.6rem;
-}
-
-nav .navLinks a:first-child {
-  margin-right: 88px;
+  margin: 0 3rem;
 }
 /*# sourceMappingURL=Navbar.css.map */
