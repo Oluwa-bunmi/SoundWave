@@ -1,7 +1,8 @@
 import React from "react";
 import "./Navbar.css";
 import { images } from "../../constants";
-import {GrMenu} from "react-icons/gr";
+import { GrMenu } from "react-icons/gr";
+import { GrClose } from "react-icons/gr";
 
 const Navbar = () => {
   return (
@@ -11,12 +12,21 @@ const Navbar = () => {
           <img src={images.logo} alt="Logo" />
           <h2>SOUNDWAVE</h2>
         </div>
-        <div className="navLinks">
-          <a href="">Discover</a>
-          <a href="">Join</a>
-        </div>
+
+        <ul className="navLinks">
+          <li>Discover</li>
+          <li>Join</li>
+        </ul>
+
         <div className="menu">
-          <GrMenu />
+          <GrMenu color="#fff" fontSize={27} />
+          <div className="overlay">
+            <GrClose color="#fff" fontSize={27} />
+          </div>
+          <ul className="smallScreenLinks">
+            <li>Discover</li>
+            <li>Join</li>
+          </ul>
         </div>
         {/* 768 */}
       </nav>

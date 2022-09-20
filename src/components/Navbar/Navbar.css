@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap");
 header {
   background-image: url(../../assets/bg.svg);
-  background: #B0AAAA;
+  background: #b0aaaa;
 }
 
 header nav {
@@ -41,9 +41,10 @@ header nav .navLinks {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  list-style: none;
 }
 
-header nav .navLinks a {
+header nav .navLinks li {
   font-size: 1.6rem;
   margin: 0 3rem;
 }
