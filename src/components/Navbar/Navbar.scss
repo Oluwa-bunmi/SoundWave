@@ -26,6 +26,9 @@ header {
       display: flex;
       justify-content: flex-end;
       list-style: none;
+      @media screen and (max-width:768px) {
+        display: none;
+      }
       li {
         font-size: 1.6rem;
         margin: 0 3rem;
@@ -33,6 +36,42 @@ header {
       // a:first-child {
       //   margin-right: 88px;
       // }
+    }
+    .smallScreenMenu{
+        display: none;
+         @media screen and (max-width:768px){
+            display: flex;
+
+         }
+        .overlay{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            flex-direction: column;
+            transition: 0.5s ease;
+            background: #b0aaaa;
+            z-index: 2;
+
+        }
+        .close{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+        .smallScreenLinks{
+            display: flex;
+            flex-direction: column;
+            li{
+                margin: 2rem;
+                text-align: center;
+            cursor: pointer;
+            font-size: 2rem;
+
+         }
+        }
     }
   }
 }
