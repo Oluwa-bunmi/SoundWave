@@ -17,6 +17,7 @@ const Navbar = () => {
         <ul className="navLinks">
           <li>Discover</li>
           <li>Join</li>
+          
         </ul>
 
         <div className="smallScreenMenu">
