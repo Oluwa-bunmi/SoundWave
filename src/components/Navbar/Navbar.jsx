@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Navbar.css";
+
 import { images } from "../../constants";
 import { GrMenu } from "react-icons/gr";
 import { GrClose } from "react-icons/gr";
