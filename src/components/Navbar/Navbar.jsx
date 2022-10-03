@@ -1,6 +1,8 @@
 import React from "react";
 import "../../input.css";
 import { images } from "../../constants";
+import { Link } from "react-router-dom";
+
 // import { GrMenu } from "react-icons/gr";
 // import { GrClose } from "react-icons/gr";
 
@@ -15,8 +17,12 @@ const Navbar = () => {
         </div>
         <div>
           <ul className="hidden md:flex space-x-20">
-            <li className="text-2xl text-white">Discover</li>
-            <li className="text-2xl text-white">Join</li>
+            <li className="text-2xl text-white">
+              <Link to="/discover"> Discover</Link>
+            </li>
+            <li className="text-2xl text-white">
+              <Link to="/join">Join</Link>
+            </li>
           </ul>
         </div>
       </nav>
