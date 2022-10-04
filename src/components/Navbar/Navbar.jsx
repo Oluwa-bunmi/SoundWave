@@ -8,8 +8,8 @@ import { GrMenu, GrClose } from "react-icons/gr";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const handleToggle = () => {
-    setToggleMenu(!toggleMenu)
-  }
+    setToggleMenu(!toggleMenu);
+  };
   return (
     <>
       <nav className="container mx-auto p-6 flex justify-between items-center text-white">
@@ -28,28 +28,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div onClick={handleToggle} className="block md:hidden">
-          {!toggleMenu ? (
-            <GrClose size={25}  />
-          ) : (
-            <GrMenu size={25}  />
-          )}
+          {!toggleMenu ? <GrClose size={25} /> : <GrMenu size={25} />}
         </div>
-        {/* <div className=" fixed left-0 top-0 w-full h-full text-white bg-[#202027] ">
-          <div className="flex justify-end mt-20 pr-9">
-           
-            <GrClose size={25} />
-          </div>
-          <div className="flex justify-center pt-[22%]">
-            <ul className="uppercase ">
-              <li className="text-2xl p-4 px-12  border-b border-gray-500">
-                <Link to="/discover"> Discover</Link>
-              </li>
-              <li className="text-2xl p-4 px-12  border-b border-gray-500">
-                <Link to="/join">Join</Link>
-              </li>
-            </ul>
-          </div>
-        </div> */}
+
         <div
           className={
             !toggleMenu
