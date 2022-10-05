@@ -7,6 +7,10 @@ module.exports = {
         pryblue: "#1762A7",
         darkGrey: "#B0AAAA",
       },
+      backgroundImage: {
+        'pattern': "url('../src/assets/background.svg')",
+       
+      },
     },
   },
   plugins: [],
