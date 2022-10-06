@@ -13,10 +13,10 @@ const Navbar = () => {
   return (
     <header className="bg-[#2F303A]">
       <nav className="container mx-auto p-6 flex justify-between items-center text-white">
-        <div className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img src={images.logo} alt="logo" className="w-12 mr-2" />
           <h1 className="text-2xl  ">SOUNDWAVE</h1>
-        </div>
+        </Link>
         <div>
           <ul className="hidden md:flex space-x-20">
             <li className="text-2xl ">
