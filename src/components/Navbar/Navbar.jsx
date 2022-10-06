@@ -11,7 +11,7 @@ const Navbar = () => {
     setToggleMenu(!toggleMenu)
   }
   return (
-    <>
+    <header className="bg-[#2F303A]">
       <nav className="container mx-auto p-6 flex justify-between items-center text-white">
         <div className="flex items-center">
           <img src={images.logo} alt="logo" className="w-12 mr-2" />
@@ -28,13 +28,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div onClick={handleToggle} className="block md:hidden">
-          {!toggleMenu ? (
-            <GrClose size={25}  />
-          ) : (
-            <GrMenu size={25}  />
-          )}
+          {!toggleMenu ? <GrClose size={25} /> : <GrMenu size={25} />}
         </div>
-        
+
         <div
           className={
             !toggleMenu
@@ -52,7 +48,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-    </>
+    </header>
   );
 };
 
