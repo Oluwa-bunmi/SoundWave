@@ -1,12 +1,10 @@
 import React from "react";
 import "../../input.css";
 import { images } from "../../constants";
-import Navbar from "../Navbar/Navbar";
 import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <div className="bg-pattern bg-center bg-cover">
-   
       <section className="pt-10 ">
         <div className="container flex flex-col-reverse mx-auto items-center md:flex-row">
           <div className="md:w-1/2">

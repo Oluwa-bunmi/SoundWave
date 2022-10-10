@@ -1,20 +1,16 @@
 import React from "react";
 import "../../input.css";
-import { images } from "../../constants";
-import Navbar from "../Navbar/Navbar";
-import { Link } from "react-router-dom";
-
 const Join = () => {
   const url = "https://www.google.com/";
   return (
     <section className="bg-[#2F303A]">
       <div className="container mx-auto flex flex-col items-center pt-10 text-white md:flex-row ">
-        <div className="mb-8 text-center md:w-1/2">
+        <div className="mb-8 md:mb-0 text-center md:w-1/2">
           <h1 className="text-4xl md:text-6xl">
             JOIN THE <span className="text-[#BC3A80]">FUN. </span>
           </h1>
         </div>
-        <div className="bg-[#202027]  rounded px-8 pt-6 pb-8 mb-10 w-full mx-4 md:w-1/2 md:px-10">
+        <div className="bg-[#202027]  rounded px-8 pt-6 pb-8 w-full mx-4 md:mb-16 md:w-1/2 md:px-10">
           <form action={url}>
             <div>
               <label class="block text-base font-medium text-white">
