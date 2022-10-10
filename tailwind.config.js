@@ -6,12 +6,12 @@ module.exports = {
       colors: {
         pryblue: "#1762A7",
         darkGrey: "#B0AAAA",
+        borderColor: "#1762A7",
       },
       backgroundImage: {
-        'pattern': "url('../src/assets/background.svg')",
-       
+        pattern: "url('../src/assets/background.svg')",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
