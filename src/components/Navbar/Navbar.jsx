@@ -28,7 +28,11 @@ const Navbar = () => {
           </ul>
         </div>
         <div onClick={handleToggle} className="block md:hidden">
-          {!toggleMenu ? <GrClose size={25} /> : <GrMenu size={25} />}
+          {!toggleMenu ? (
+            <GrClose size={25} stroke="#fff" />
+          ) : (
+            <GrMenu size={25} stroke="#fff" />
+          )}
         </div>
 
         <div
