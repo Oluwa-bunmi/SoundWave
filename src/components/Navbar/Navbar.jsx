@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import "../../input.css";
 import { images } from "../../constants";
 import { Link } from "react-router-dom";
-
-import { GrMenu, GrClose } from "react-icons/gr";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -29,9 +28,9 @@ const Navbar = () => {
         </div>
         <div onClick={handleToggle} className="block md:hidden">
           {!toggleMenu ? (
-            <GrClose size={25} stroke="#fff" />
+            <AiOutlineClose size={25} color="#fff" />
           ) : (
-            <GrMenu size={25} stroke="#fff" />
+            <AiOutlineMenu size={25} stroke="#fff" />
           )}
         </div>
 
