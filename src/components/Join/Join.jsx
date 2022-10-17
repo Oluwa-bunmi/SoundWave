@@ -3,7 +3,7 @@ import "../../input.css";
 const Join = () => {
   const url = "https://www.google.com/";
   return (
-    <section className="bg-[#2F303A]">
+    <section className="bg-[#2F303A] font-poppins">
       <div className="container mx-auto flex flex-col items-center pt-10 text-white md:flex-row ">
         <div className="mb-8 md:mb-0 text-center md:w-1/2">
           <h1 className="text-4xl md:text-6xl">

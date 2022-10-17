@@ -11,6 +11,9 @@ module.exports = {
       backgroundImage: {
         pattern: "url('../src/assets/background.svg')",
       },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],

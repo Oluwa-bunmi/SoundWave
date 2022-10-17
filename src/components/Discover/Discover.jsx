@@ -3,7 +3,7 @@ import "../../input.css";
 import { images } from "../../constants";
 const Discover = () => {
   return (
-    <section className="bg-[#2F303A]">
+    <section className="bg-[#2F303A] font-poppins">
       <div className="container mx-auto  flex flex-col pt-10 items-center text-white text-center md:text-left md:flex-row   ">
         <div className="mb-8 md:w-1/2 md:mb-0 px-4">
           <h1 className="text-4xl  lg:text-5xl">Discover new music</h1>

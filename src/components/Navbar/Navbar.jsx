@@ -11,7 +11,7 @@ const Navbar = () => {
     setToggleMenu(!toggleMenu)
   }
   return (
-    <header className="bg-[#2F303A]">
+    <header className="bg-[#2F303A] font-poppins">
       <nav className="container mx-auto p-6 flex justify-between items-center text-white">
         <Link to="/" className="flex items-center">
           <img src={images.logo} alt="logo" className="w-12 mr-2" />
